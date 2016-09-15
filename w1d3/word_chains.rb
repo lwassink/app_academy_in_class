@@ -77,6 +77,5 @@ end
 
 if __FILE__ == $PROGRAM_NAME
   word_chainer = WordChainer.new('dictionary.txt')
-  p word_chainer.run("market", "batter")
-  p word_chainer.all_seen_words
+  p word_chainer.run(ARGV[0], ARGV[1])
 end
